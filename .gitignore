@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+pytest-of-*/
+pip-ephem-wheel-cache-*/
+build/
+dist/
+.yfinance-cache/
+data/market_prices.csv
+data/source.json
+reports/synthetic/
+reports/csv/
+reports/**/resume_evidence.md
+.DS_Store
+Thumbs.db

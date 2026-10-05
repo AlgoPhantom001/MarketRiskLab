@@ -1,0 +1,14 @@
+{
+  "tickers": ["SPY", "QQQ", "IWM"],
+  "weights": [0.4, 0.35, 0.25],
+  "liquidity_horizons": [10, 10, 20],
+  "notional": 1000000.0,
+  "currency": "USD",
+  "start": "2018-01-01",
+  "end_exclusive": "2026-10-01",
+  "window": 250,
+  "confidence_levels": [0.95, 0.99],
+  "snapshot_draws": 100000,
+  "rolling_draws": 20000,
+  "seed": 42
+}

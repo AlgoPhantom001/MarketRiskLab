@@ -1,0 +1,3 @@
+calibration,start,end,daily_observations,ten_day_scenarios,var99_1day_usd,es975_1day_usd,var975_10day_usd,es975_10day_usd,liquidity_adjusted_es975_usd,illustrative_capital_proxy_usd,regulatory_compliance,proxy_definition
+current,2025-10-02,2026-09-30,250,241,20812.0148148,24077.0372262,37178.6004612,42152.1806512,44534.4918082,,False,stressed_LH_ES_only_no_regulatory_multiplier
+stressed,2019-05-31,2020-05-27,250,241,79857.7324869,73377.9708702,172430.518774,213507.935878,225811.258293,225811.258293,False,stressed_LH_ES_only_no_regulatory_multiplier

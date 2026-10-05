@@ -1,0 +1,10 @@
+scenario,result_type,confidence,deterministic_loss_usd,var_usd,es_usd,portfolio_daily_sigma_usd,description
+baseline,distribution_risk,0.95,,15791.5160369,19987.4228956,10041.437532,Latest 250-day covariance
+baseline,distribution_risk,0.99,,22634.6979474,26037.4031956,10041.437532,Latest 250-day covariance
+volatility_x1.5,distribution_risk,0.95,,24049.863509,30343.7237971,15062.156298,Each marginal daily volatility x1.5; correlations and mean unchanged
+volatility_x1.5,distribution_risk,0.99,,34314.6363749,39418.694247,15062.156298,Each marginal daily volatility x1.5; correlations and mean unchanged
+high_correlation,distribution_risk,0.95,,16672.527942,21092.2473679,10577.0547387,R_stress = 0.1 R + 0.9 J; marginal volatilities unchanged
+high_correlation,distribution_risk,0.99,,23880.7298976,27464.9377916,10577.0547387,R_stress = 0.1 R + 0.9 J; marginal volatilities unchanged
+equity_minus10pct,deterministic_scenario,,100000,,,,All equity prices fall 10%
+equity_minus20pct,deterministic_scenario,,200000,,,,All equity prices fall 20%
+synchronized_minus2sigma,deterministic_scenario,,21269.8054293,,,,Each equity falls twice its own daily standard deviation simultaneously

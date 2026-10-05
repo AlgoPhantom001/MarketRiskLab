@@ -1,0 +1,3 @@
+kind,spot,strike,maturity,rate,volatility,dividend,price,delta,gamma,vega,theta,greek_status,option_units,source
+call,100,100,1,0.05,0.2,0,10.4505835722,0.636830651176,0.0187620173458,0.375240346917,-0.0175726782094,available,100,illustrative_inputs_not_market_option_quotes
+put,100,100,1,0.05,0.2,0,5.57352602226,-0.363169348824,0.0187620173458,0.375240346917,-0.00454213814777,available,100,illustrative_inputs_not_market_option_quotes

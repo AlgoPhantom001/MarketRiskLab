@@ -1,0 +1,105 @@
+{
+  "project": "MarketRiskLab",
+  "project_version": "0.1.0",
+  "generated_at_utc": "2026-10-05T10:22:37.113724+00:00",
+  "source": {
+    "source": "Yahoo Finance via yfinance",
+    "synthetic": false,
+    "rows": 2198,
+    "auto_adjust": true,
+    "description": "Yahoo Finance adjusted prices via yfinance",
+    "provider": "Yahoo Finance",
+    "tickers": [
+      "SPY",
+      "QQQ",
+      "IWM"
+    ],
+    "currency": "USD",
+    "download_date_local": "2026-10-05",
+    "timezone": "Asia/Calcutta",
+    "source_metadata_recorded_at_utc": "2026-10-05T10:19:09.540466+00:00",
+    "checksum_sha256": "fa86880d6bdb20d6f7e1b7e7928bd3fe9ee06c6c680092da52ff7bb8e00c57ae",
+    "start_requested": "2018-01-01",
+    "end_exclusive": "2026-10-01"
+  },
+  "input_file": "market_prices.csv",
+  "input_sha256": "fa86880d6bdb20d6f7e1b7e7928bd3fe9ee06c6c680092da52ff7bb8e00c57ae",
+  "config": {
+    "tickers": [
+      "SPY",
+      "QQQ",
+      "IWM"
+    ],
+    "weights": [
+      0.4,
+      0.35,
+      0.25
+    ],
+    "liquidity_horizons": [
+      10,
+      10,
+      20
+    ],
+    "notional": 1000000.0,
+    "currency": "USD",
+    "start": "2018-01-01",
+    "end_exclusive": "2026-10-01",
+    "window": 250,
+    "confidence_levels": [
+      0.95,
+      0.99
+    ],
+    "snapshot_draws": 100000,
+    "rolling_draws": 20000,
+    "seed": 42
+  },
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "yfinance": "1.7.0"
+  },
+  "prices": {
+    "observations": 2198,
+    "start": "2018-01-02",
+    "end": "2026-09-30"
+  },
+  "returns": {
+    "observations": 2197,
+    "start": "2018-01-03",
+    "end": "2026-09-30"
+  },
+  "conventions": {
+    "loss": "minus_constant_notional_times_weighted_simple_return",
+    "quantile": "inverted_cdf",
+    "es": "exact_fractional_tail_mass",
+    "sample_covariance_ddof": 1,
+    "forecast_information": "250 observations strictly before forecast date",
+    "option_volatility": "annual_decimal",
+    "vega": "per_0.01_volatility",
+    "theta": "per_calendar_day",
+    "frtb": "educational_proxy_not_regulatory_compliance"
+  },
+  "figures": [
+    "figures/loss_distribution.png",
+    "figures/rolling_var_exceptions.png",
+    "figures/model_comparison.png",
+    "figures/stress_comparison.png",
+    "figures/option_sensitivities.png",
+    "figures/frtb_comparison.png"
+  ],
+  "output_sha256": {
+    "risk_comparison.csv": "c511b01a1c10ac2464a6f7a4f97f0ecf136a0121acdd4ece0ed3c039de7f0c66",
+    "backtest_daily.csv": "2a727920dfe233ea2b52b43fcfd4f078ab9e8ebb1008c5f503de69f506f03bb1",
+    "backtest_summary.csv": "aace4c619d8a98ee78568a97767e11376cb1a343bd04ab08954ccb26689e8ea6",
+    "exceptions.csv": "a904e71c1051d6d006d31c99540a418487f1f649088a1c617d94d8c319e2d4f4",
+    "stress_results.csv": "27cce019a14aab311958b446bcbccc2a5daaf9f6311d531c19f9b113570b194d",
+    "option_prices_greeks.csv": "eeeb2af7dcb82e5edd4423ff9fdba79a9e09e132a5e3c2ba4a186b39d57242a2",
+    "option_stress.csv": "eaa28d06396c1a47d7ea70d643a14c5a2fca6c48bcbb229a9f7e668162a6f873",
+    "frtb_comparison.csv": "85659e5852498124ee75c6b0222e09ac05aae0fc0079c9cfe3fec51c274a54ad",
+    "liquidity_buckets.csv": "00e4f5eb7744c3fcb045a13800989440048e728a7129b0a3b7c65cb231a13153",
+    "stress_window_candidates.csv": "09891757bb439a817b502c4b4d9ce83aec49859c4962cad34aa0a2403fc259a1"
+  }
+}

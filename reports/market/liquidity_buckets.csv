@@ -1,0 +1,11 @@
+liquidity_horizon,factor_subset,factor_count,ten_day_scenarios,var10_raw_usd,es10_raw_usd,es10_charge_usd,horizon_increment_over10,squared_contribution,calibration
+10,"SPY,QQQ,IWM",3,241,37178.6004612,42152.1806512,42152.1806512,1,1776806333.65,current
+20,IWM,1,241,12915.5879333,14370.6167914,14370.6167914,1,206514626.964,current
+40,,0,241,0,0,0,2,0,current
+60,,0,241,0,0,0,2,0,current
+120,,0,241,0,0,0,6,0,current
+10,"SPY,QQQ,IWM",3,241,172430.518774,213507.935878,213507.935878,1,45585638682.8,stressed
+20,IWM,1,241,58415.1209707,73519.2878704,73519.2878704,1,5405085688.97,stressed
+40,,0,241,0,0,0,2,0,stressed
+60,,0,241,0,0,0,2,0,stressed
+120,,0,241,0,0,0,6,0,stressed
